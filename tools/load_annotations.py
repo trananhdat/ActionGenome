@@ -18,7 +18,7 @@ def load_annotations(annotation_dir):
 
 
 if __name__ == "__main__":
-    annotation_dir = '/kaggle/input/action-genome/action_genome_v1.0'
+    annotation_dir = '/content/drive/MyDrive/VideoQA/action_genome_v1.0'
     object_anno, person_anno, frame_list = load_annotations(annotation_dir)
     assert set(object_anno.keys()) == set(person_anno.keys())
     assert len(object_anno) == len(frame_list)
