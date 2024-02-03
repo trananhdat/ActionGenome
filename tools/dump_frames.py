@@ -48,11 +48,11 @@ def dump_frames(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Dump frames")
-    parser.add_argument("--video_dir", default="/kaggle/input/charades/Charades_v1_480",
+    parser.add_argument("--video_dir", default="/content/drive/MyDrive/VideoQA/Charades_v1_480",
                         help="Folder containing Charades videos.")
-    parser.add_argument("--frame_dir", default="/kaggle/working/frames",
+    parser.add_argument("--frame_dir", default="/content/drive/MyDrive/VideoQA/framess",
                         help="Root folder containing frames to be dumped.")
-    parser.add_argument("--annotation_dir", default="/kaggle/input/action-genome/action_genome_v1.0",
+    parser.add_argument("--annotation_dir", default="/content/drive/MyDrive/VideoQA/action_genome_v1.0",
                         help=("Folder containing annotation files, including object_bbox_and_relationship.pkl, "
                               "person_bbox.pkl and frame_list.txt."))
     parser.add_argument("--all_frames", action="store_true",
